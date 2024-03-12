@@ -6,6 +6,7 @@ import NotFoundContent from './NotFoundPage';
 import FirstPageContent from './onboarding/FirstPage';
 import RegisterPageContent from './onboarding/RegisterPage';
 import RegisteredContent from './onboarding/RegisteredPage';
+import DashboardContent from './App/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
   errorElement:<NotFoundContent/>
   },
   {
-  path: '/Home',
-  element: <NotFoundContent/>,
+  path: '/App/Home',
+  element: <DashboardContent/>,
   errorElement:<NotFoundContent/>
   },
 ]);

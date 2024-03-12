@@ -6,7 +6,7 @@ export default function RegisterPageContent() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      navigate('/Home'); //For Demo only
+      navigate('/App/Home'); //For Demo only
     }, 5000); // 5000 milliseconds = 5 seconds
 
     return () => clearTimeout(timeout);
