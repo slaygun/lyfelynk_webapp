@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function FirstPageContent() {
   return (
-    <section className="flex justify-center items-center h-screen bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
+    <section className="px-6 flex justify-center items-center h-screen bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
       <div className="flex flex-col md:flex-row md:w-1/2">
         <div className="flex-1 flex flex-col justify-center text-white p-4">
           <div className="flex items-center mb-4">

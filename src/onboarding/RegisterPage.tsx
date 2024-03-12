@@ -5,9 +5,9 @@ import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@
 import { ChevronLeft } from 'lucide-react';
 import { Link } from "react-router-dom";
 
-export default function RegisterPageContent() {
+export default function RegisteredContent() {
   return (
-    <section className="flex justify-center items-center h-screen bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
+    <section className="px-6 flex justify-center items-center h-screen bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
       <div className="flex flex-col lg:flex-row md:w-1/2">
         <div className="flex-1 flex flex-col justify-center text-white p-4">
           <div className="flex items-center mb-4">
@@ -28,7 +28,7 @@ export default function RegisterPageContent() {
               </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
+          <div className="grid grid-cols-2 gap-4 py-4">
             <Input placeholder="Username" />
             <Input placeholder="Pincode" />
             <Input placeholder="Name" />
@@ -72,4 +72,3 @@ export default function RegisterPageContent() {
     </section>
   )
 }
-
