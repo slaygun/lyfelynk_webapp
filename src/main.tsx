@@ -1,14 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './onboarding/App.tsx'
 import './index.css'
+import LoginRegister from './onboarding/LoginRegisPage';
+import NotFoundContent from './NotFoundPage';
 
 const router = createBrowserRouter([
   {
   path: '/',
-  element: <App />,
-  //errorElement: <NotFoundPage />
+  element: <LoginRegister/>,
+  errorElement:<NotFoundContent/>
+  },
+  {
+    errorElement:<NotFoundContent/>
   },
 ]);
 
