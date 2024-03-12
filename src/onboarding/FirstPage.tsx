@@ -4,8 +4,9 @@ import { ChevronRight } from 'lucide-react';
 import { User } from 'lucide-react';
 import { BriefcaseMedical } from 'lucide-react';
 import { Building } from 'lucide-react';
+import { Link } from "react-router-dom";
 
-export default function LoginRegister() {
+export default function FirstPageContent() {
   return (
     <section className="flex justify-center items-center h-screen bg-[conic-gradient(at_bottom_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
       <div className="flex flex-col md:flex-row md:w-1/2">
@@ -27,13 +28,17 @@ export default function LoginRegister() {
           </div>
           <p className="text-sm text-gray-500 mb-4">Login/Register As</p>
           <div className="space-y-4">
-            <Button className="flex justify-between items-center w-full border border-gray-300 p-3 rounded-md" variant="secondary">
-              <div className="flex items-center">
-                <User className="text-primary"/>
-                <span className="ml-2 font-bold">Health User</span>
-              </div>
-              <ChevronRight/>
-            </Button>
+
+            <Link to="/Health-User">
+              <Button className="flex justify-between items-center w-full border border-gray-300 p-3 rounded-md" variant="secondary">
+                <div className="flex items-center">
+                  <User className="text-primary"/>
+                  <span className="ml-2 font-bold">Health User</span>
+                </div>
+                <ChevronRight/>
+              </Button>
+            </Link>
+
             <Button className="flex justify-between items-center w-full border border-gray-300 p-3 rounded-md" variant="secondary">
               <div className="flex items-center">
                 <BriefcaseMedical className="text-primary"/>

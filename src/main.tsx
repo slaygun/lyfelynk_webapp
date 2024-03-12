@@ -2,17 +2,26 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import LoginRegister from './onboarding/LoginRegisPage';
 import NotFoundContent from './NotFoundPage';
+import FirstPageContent from './onboarding/FirstPage';
+import RegisterPageContent from './onboarding/RegisterPage';
+import RegisteredContent from './onboarding/RegisteredPage';
 
 const router = createBrowserRouter([
   {
   path: '/',
-  element: <LoginRegister/>,
+  element: <FirstPageContent/>,
   errorElement:<NotFoundContent/>
   },
   {
-    errorElement:<NotFoundContent/>
+  path: '/Health-User',
+  element: <RegisterPageContent/>,
+  errorElement:<NotFoundContent/>
+  },
+  {
+  path: '/Health-User/Register',
+  element: <RegisteredContent/>,
+  errorElement:<NotFoundContent/>
   },
 ]);
 
