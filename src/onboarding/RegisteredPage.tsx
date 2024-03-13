@@ -20,7 +20,7 @@ export default function RegisterPageContent() {
             <img
               alt="Logo"
               className="h-6 w-6 md:h-10 md:w-10"
-              src="assets/LyfeLynk.png"/>
+              src="/assets/LyfeLynk.png"/>
             <h1 className="text-2xl md:text-4xl font-bold ml-2">Lyfelynk</h1>
           </div>
           <p className="text-xl md:text-2xl">Digitally Linking your health.</p>

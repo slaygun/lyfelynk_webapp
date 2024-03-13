@@ -1,6 +1,6 @@
-import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   return (
@@ -9,40 +9,32 @@ export default function Navbar() {
         <img
           alt="Logo"
           className="h-6 w-6"
-          src="/public/assets/LyfeLynk.png"/>
+          src="/assets/LyfeLynk.png"/>
         <p className="hidden md:block text-2xl font-semibold text-blue-600">
           LyfeLynk
         </p>
       </div>
-      <div className="hidden md:flex space-x-4">
-        <p className="text-gray-600 hover:text-gray-800">
+      <div className="hidden md:flex space-x-8">
+        <Link to="/App/Home" className="text-gray-600 hover:text-gray-800">
           Dashboard
-        </p>
-        <p className="text-gray-600 hover:text-gray-800">
+        </Link>
+        <Link to="/App/MyHealth" className="text-gray-600 hover:text-gray-800">
           My Health
-        </p>
-        <p className="text-gray-600 hover:text-gray-800">
+        </Link>
+        <Link to="/App/Marketplace" className="text-gray-600 hover:text-gray-800">
           Marketplace
-        </p>
-        <p className="text-gray-600 hover:text-gray-800">
+        </Link>
+        <Link to="/App/Profile" className="text-gray-600 hover:text-gray-800">
           Profile
-        </p>
+        </Link>
       </div>
       <div className="flex items-center">
-        <Select>
-          <SelectTrigger id="language">
-            <SelectValue placeholder="English" />
-          </SelectTrigger>
-          <SelectContent position="popper">
-            <SelectItem value="english">English</SelectItem>
-            <SelectItem value="spanish">Spanish</SelectItem>
-          </SelectContent>
-        </Select>
+
         <Avatar className="ml-4">
           <AvatarImage alt="John Lenon" src="/placeholder.svg?height=32&width=32" />
-          <AvatarFallback>John Lenon</AvatarFallback>
+          <AvatarFallback>JL</AvatarFallback>
         </Avatar>
-        <Button className="ml-4" variant="outline">
+        <Button className="ml-4">
           Connect
         </Button>
       </div>

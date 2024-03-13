@@ -1,12 +1,12 @@
 import Navbar from "./Navbar";
 
-export default function DashboardContent() {
+export default function MarketplaceContent() {
   return (
     <div>
       <section>
         <Navbar/>
       </section>
-      Dashboard
+      Marketplace
     </div>
   );
 }
