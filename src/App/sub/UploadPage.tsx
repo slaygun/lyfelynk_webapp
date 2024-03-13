@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"
-import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft, Upload } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import Navbar from "@/App/Navbar";
 
 export default function UploadContent() {
@@ -11,7 +10,7 @@ export default function UploadContent() {
       <section>
         <Navbar/>
       </section>
-      <div className=" p-6 md:flex md:items-center md:justify-center">
+      <div className=" md:py-20 p-6 md:flex md:items-center md:justify-center">
         <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
           <div className="mb-4">
             <Link to="/App/MyHealth">

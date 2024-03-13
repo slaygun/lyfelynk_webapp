@@ -23,7 +23,7 @@ export default function MarketplaceContent() {
             </TabsList>
 
             <TabsContent value="Purchase">
-              <div className="flex justify-between space-x-4 mb-4">
+              <div className="flex justify-between space-x-4 py-4">
                 <Input placeholder="Filter documents..." />
                 <Button>Purchase</Button>
               </div>
@@ -118,7 +118,7 @@ export default function MarketplaceContent() {
                 </TableBody>
               </Table>
               <div className="flex justify-between items-center mt-4">
-                <span>0 of 5 row(s) selected.</span>
+                <span  className="text-sm text-gray-600">0 of 5 row(s) selected.</span>
                 <div className="flex space-x-2">
                   <Button variant="ghost">Previous</Button>
                   <Button variant="ghost">Next</Button>
