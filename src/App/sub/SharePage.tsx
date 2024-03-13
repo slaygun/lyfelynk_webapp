@@ -12,7 +12,7 @@ export default function ShareContent() {
       <section>
         <Navbar/>
       </section>
-      <div key="1" className="flex flex-col items-center justify-center p-8">
+      <div className="flex flex-col items-center justify-center p-8">
           <div className="flex items-center justify-between w-full">
             <Link to="/App/MyHealth/">
               <ChevronLeft className="text-gray-600" />
