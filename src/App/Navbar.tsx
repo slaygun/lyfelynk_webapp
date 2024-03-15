@@ -49,6 +49,22 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        
+        <div className="hidden md:block space-x-6">
+          <Link to="/App/Home" className="text-gray-600 hover:text-gray-800 my-2">
+            Dashboard
+          </Link>
+          <Link to="/App/MyHealth" className="text-gray-600 hover:text-gray-800 my-2">
+            My Health
+          </Link>
+          <Link to="/App/Marketplace" className="text-gray-600 hover:text-gray-800 my-2">
+            Marketplace
+          </Link>
+          <Link to="/App/Profile" className="text-gray-600 hover:text-gray-800 my-2">
+            Profile
+          </Link>
+        </div>
+
         <div className="flex items-center">
           <Avatar className="ml-4">
             <AvatarImage alt="John Lenon" src="/placeholder.svg?height=32&width=32" />
