@@ -15,7 +15,10 @@ export default function ShareContent() {
       <div className="flex flex-col items-center justify-center p-8">
           <div className="flex items-center justify-between w-full">
             <Link to="/App/MyHealth/">
-              <ChevronLeft className="text-gray-600" />
+              <div className="flex text-gray-600">
+                <ChevronLeft className=" mr-2" />
+                Back
+              </div>
             </Link>
           </div>
         <h1 className="mt-4 text-4xl font-bold">Share your Health Data</h1>
