@@ -4,7 +4,6 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { TableHead, TableRow, TableHeader, TableCell, TableBody, Table } from "@/components/ui/table"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Navbar from "./Navbar";
-import { EllipsisIcon } from "lucide-react";
 
 export default function MarketplaceContent() {
   return (
@@ -22,7 +21,6 @@ export default function MarketplaceContent() {
             <TabsContent value="Purchase">
               <div className="flex justify-between space-x-4 py-4">
                 <Input placeholder="Filter documents..." />
-                <Button>Purchase</Button>
               </div>
               <Table>
                 <TableHeader>
@@ -43,7 +41,7 @@ export default function MarketplaceContent() {
                     <TableCell>who.health.org</TableCell>
                     <TableCell>$316.00</TableCell>
                     <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
+                      <Button>Purchase</Button>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -54,7 +52,7 @@ export default function MarketplaceContent() {
                     <TableCell>who.health.org</TableCell>
                     <TableCell>$316.00</TableCell>
                     <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
+                      <Button>Purchase</Button>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -65,7 +63,7 @@ export default function MarketplaceContent() {
                     <TableCell>who.health.org</TableCell>
                     <TableCell>$316.00</TableCell>
                     <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
+                      <Button>Purchase</Button>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -76,7 +74,7 @@ export default function MarketplaceContent() {
                     <TableCell>who.health.org</TableCell>
                     <TableCell>$316.00</TableCell>
                     <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
+                      <Button>Purchase</Button>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -87,29 +85,7 @@ export default function MarketplaceContent() {
                     <TableCell>who.health.org</TableCell>
                     <TableCell>$316.00</TableCell>
                     <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <Checkbox id="doc6" />
-                    </TableCell>
-                    <TableCell>Loremipsum</TableCell>
-                    <TableCell>who.health.org</TableCell>
-                    <TableCell>$316.00</TableCell>
-                    <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <Checkbox id="doc7" />
-                    </TableCell>
-                    <TableCell>Loremipsum</TableCell>
-                    <TableCell>who.health.org</TableCell>
-                    <TableCell>$316.00</TableCell>
-                    <TableCell>
-                      <EllipsisIcon className="text-gray-500" />
+                      <Button>Purchase</Button>
                     </TableCell>
                   </TableRow>
                 </TableBody>
@@ -127,7 +103,6 @@ export default function MarketplaceContent() {
             <TabsContent value="Past Orders">
               <div className="flex justify-between py-4 space-x-4">
                   <Input className="" placeholder="Filter documents..." type="text" />
-                  <Button className="bg-blue-500 text-white">Download</Button>
                 </div>
                 <Table>
                   <TableHeader>
@@ -146,7 +121,7 @@ export default function MarketplaceContent() {
                       <TableCell className="font-medium">Loremipsum</TableCell>
                       <TableCell>Today 5:15 PM</TableCell>
                       <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
+                        <Button>Download</Button>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -156,7 +131,7 @@ export default function MarketplaceContent() {
                       <TableCell className="font-medium">Loremissspm</TableCell>
                       <TableCell>Today 9:48 AM</TableCell>
                       <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
+                        <Button>Download</Button>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -166,7 +141,7 @@ export default function MarketplaceContent() {
                       <TableCell className="font-medium">IpsumLore</TableCell>
                       <TableCell>Yesterday</TableCell>
                       <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
+                        <Button>Download</Button>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -176,7 +151,7 @@ export default function MarketplaceContent() {
                       <TableCell className="font-medium">Sbocedfsjsjs</TableCell>
                       <TableCell>Yesterday</TableCell>
                       <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
+                        <Button>Download</Button>
                       </TableCell>
                     </TableRow>
                     <TableRow>
@@ -186,17 +161,7 @@ export default function MarketplaceContent() {
                       <TableCell className="font-medium">SimpsonLorem</TableCell>
                       <TableCell>Monday</TableCell>
                       <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
-                      </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell>
-                        <Checkbox id="doc6" />
-                      </TableCell>
-                      <TableCell className="font-medium">SimpsonLorem</TableCell>
-                      <TableCell>Monday</TableCell>
-                      <TableCell>
-                        <EllipsisIcon className="text-gray-500" />
+                        <Button>Download</Button>
                       </TableCell>
                     </TableRow>
                   </TableBody>

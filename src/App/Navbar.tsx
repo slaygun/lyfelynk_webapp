@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="flex justify-between items-center py-4 px-8">
         <div className="flex items-center space-x-4">
           <div className="md:hidden">
-            <Button variant="secondary" onClick={handleMenuClick}>
+            <button className='p-2 border rounded-lg' onClick={handleMenuClick}>
               <Menu className="h-6 w-6" />
-            </Button>
+            </button>
           </div>
           <img
             alt="Logo"
