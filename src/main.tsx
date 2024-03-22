@@ -19,7 +19,7 @@ import { ThemeProvider } from "@/components/theme-provider"; // Importing the Th
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <FirstPageContent />,
+    element: <FirstPageContent/>,
     errorElement: <NotFoundContent />
   },
   {
