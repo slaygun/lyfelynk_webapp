@@ -34,7 +34,7 @@ export default function MyHealthContent() {
           </div>
 
         </section>
-        <section className="container mt-8">
+        <section className="md:container mt-8">
           <h2 className="text-2xl md:text-4xl font-semibold">Recent Activities</h2>
           <p className="pb-6 text-gray-600">Recently shared or uploaded files on LyfeLynk.</p>
           <div>

@@ -142,11 +142,11 @@ export function RecentActivityTable() {
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter documents..."
-          value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
+          value={(table.getColumn("id")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
-            table.getColumn("name")?.setFilterValue(event.target.value)
+            table.getColumn("id")?.setFilterValue(event.target.value)
           }
-          className="max-w-4xl"
+          className="max-w-4xl mr-2"
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
