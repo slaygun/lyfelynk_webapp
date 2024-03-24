@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChevronLeft } from "lucide-react";
-import Navbar from "@/App/Navbar";
+import Navbar from "@/HealthUser/App/Navbar";
 import FileUpload from "./file-upload"
 
 export default function UploadContent() {
